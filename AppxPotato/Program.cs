@@ -370,7 +370,7 @@ namespace PNAC
 
         private static int dwThreadCount = 1;
 
-        public static void EasySystemShell()
+        public static void SystemShell()
         {
             Console.WriteLine("[!] LAUNCHING APPXPOTATO PoC BY PNAC");
 
@@ -411,7 +411,7 @@ namespace PNAC
         }
         static void Main(string[] args)
         {
-            EasySystemShell();
+            SystemShell();
         }
     }
 }
