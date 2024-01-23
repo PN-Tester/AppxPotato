@@ -7,7 +7,7 @@ This tool leverages a vulnerability I discovered in Windows 10/11 affecting the 
 ![](https://github.com/PN-Tester/AppxPotato/blob/main/AppxPotatoDemo.gif)
 
 # Compiling
-Ideally, you can just git clone the repo and build the project in VS Studio 2019 or higher. The project uses the NtAPIDotNet class library from James Forshaw to interact with the RPC interface. The interface class file itself was generated with NtObjectManager.
+Ideally, you can just git clone the repo and build the project in VS Studio 2019 or higher. The project uses the NtAPIDotNet class library from James Forshaw to interact with the RPC interface. The interface class file itself was generated with NtObjectManager on win10 but I modified it to add the required method from the win11 interface so the projects works on both OS.
 
 
 # Blog Post Coming Soon...
