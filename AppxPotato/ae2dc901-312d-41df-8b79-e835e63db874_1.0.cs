@@ -1415,6 +1415,16 @@ namespace rpc_ae2dc901_312d_41df_8b79_e835e63db874_1_0
             _Unmarshal_Helper u = SendReceive(68, m);
             return u.ReadInt32();
         }
+
+        //ADDED FOR WIN11 SUPPORT - PNAC - 2024-01-23
+        public int AppXSetTrustLabelOnPackage_59(string p0, out string p1)
+        {
+            _Marshal_Helper m = new _Marshal_Helper();
+            m.WriteTerminatedString(NtApiDotNet.Win32.Rpc.RpcUtils.CheckNull(p0, "p0"));
+            _Unmarshal_Helper u = SendReceive(59, m);
+            p1 = u.ReadReferent<string>(new System.Func<string>(u.ReadConformantVaryingString), false);
+            return u.ReadInt32();
+        }
     }
     #endregion
 }
