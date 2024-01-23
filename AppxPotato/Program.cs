@@ -372,7 +372,7 @@ namespace PNAC
 
         public static void EasySystemShell()
         {
-            Console.WriteLine("[!] LAUNCHING XPOTATO PoC BY PNAC");
+            Console.WriteLine("[!] LAUNCHING APPXPOTATO PoC BY PNAC");
 
             uint i;
             Thread[] pipeServers = new Thread[dwThreadCount];
