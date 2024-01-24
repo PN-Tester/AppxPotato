@@ -240,7 +240,7 @@ namespace PNAC
                 catch { }
                 try
                 {
-                    Console.WriteLine("[!] Calling AppXApplyTrustLabelToFolder_59 (WIN 11 METHOD)");
+                    Console.WriteLine("[!] Calling AppXSetTrustLabelOnPackage_59 (WIN 11 METHOD)");
                     Client client = new Client();
                     client.Connect();
                     string output;
